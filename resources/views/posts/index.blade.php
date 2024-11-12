@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <h1 class="mb-4">Elenco dei Post</h1>
-    <a href="{{ url('/posts/create') }}" class="btn btn-primary mb-3">Aggiungi Nuovo Post</a>
+    <a href="{{route('posts.create')}}" class="btn btn-primary mb-3">Aggiungi Nuovo Post</a>
     <table class="table table-bordered">
         <thead>
             <tr>
