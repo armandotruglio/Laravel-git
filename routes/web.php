@@ -20,3 +20,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show');
